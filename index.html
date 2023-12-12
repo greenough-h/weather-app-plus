@@ -5,31 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
-    <header>
-        <form>
-            <input type="search" placeholder="Enter a City..." required />
-            <input type="submit" />
-        </form>
-    </header>
-    <main>
-        <h1>
-            Boston
-        </h1>
-        <p>Tuesday 5:15, partially cloudy
-            <br />humidity: 89%, Wind: 10 km/hr
-        </p>
-        <p>🌥12 &degC</p>
-    </main>
-    <footer>
-        <p>Built by
-            <a href="https://github.com/greenough-h">Hayley Greenough</a> and sourced on
-            <a href="https://github.com/greenough-h/weather-app-plus"> Github</a> and hosted on
-            <a href="">Netlify</a>
-        </p>
-    </footer>
+    <div class="app-container">
+        <header>
+            <form class="search-form">
+                <input type="search" class="search-input" placeholder="Enter a City..." required />
+                <input type="submit" class="search-submit" />
+            </form>
+        </header>
+        <main>
+            <div class="all-data">
+                <div class="city-data">
+                    <h1 class="city">
+                        Boston
+                    </h1>
+                    <p>Tuesday 5:15, partially cloudy
+                        <br />humidity: 89%, Wind: 10 km/hr
+                    </p>
+                </div>
+                <div class="temperature">
+                    <p>🌥12 &degC</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Built by
+                <a href="https://github.com/greenough-h">Hayley Greenough</a> and sourced on
+                <a href="https://github.com/greenough-h/weather-app-plus"> Github</a> and hosted on
+                <a href="">Netlify</a>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
