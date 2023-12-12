@@ -42,9 +42,14 @@ body {
   justify-content: space-between;
 }
 
+.data-details {
+  color: gray;
+}
+
 strong {
   color: #f65282;
 }
+
 .temperature-block {
   display: flex;
   margin-top: 10px;
