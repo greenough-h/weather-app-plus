@@ -84,7 +84,6 @@ function getForecastData(city) {
 }
 
 function forecastSetup(response) {
-  console.log(response.data);
   let forecastString = "";
 
   response.data.daily.forEach(function (day, index) {
@@ -99,8 +98,8 @@ function forecastSetup(response) {
                         src="${day.condition.icon_url}" alt="">
                     <div class="forecast-temps">
                         <span class="forecast-temp-high">
-                            ${Math.round(day.temperature.maximum)}&deg
-                        </span>
+                            ${Math.round(day.temperature.maximum)}&deg 
+                        </span>   
                         <span class="forecast-temp-low">
                              ${Math.round(day.temperature.minimum)}&deg
                         </span>
