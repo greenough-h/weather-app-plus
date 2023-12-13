@@ -69,3 +69,33 @@ let searchElement = document.querySelector(".search-form");
 searchElement.addEventListener("submit", citySearch);
 
 citySelect("Boston");
+
+function forecastSetup() {
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastString = "";
+
+  days.forEach(function (day) {
+    forecastString =
+      forecastString +
+      `<div class="col">
+                    <div class="forecast-day">
+                        ${day}
+                    </div>
+                    <img class="forecast-icon"
+                        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="">
+                    <div class="forecast-temps">
+                        <span class="forecast-temp-high">
+                            20&deg
+                        </span>
+                        <span class="forecast-temp-low">
+                            15&deg
+                        </span>
+                    </div>
+                </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastString;
+}
+
+forecastSetup();
