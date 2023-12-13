@@ -31,12 +31,16 @@ function update(response) {
   let timeElement = document.querySelector("#date");
   let date = new Date(response.data.time * 1000);
 
+  let imgElement = document.querySelector(".temp-icon");
+  let icon = response.data.condition.icon_url;
+
   temperatureElement.innerHTML = temperature;
   cityElement.innerHTML = city;
   conditionElement.innerHTML = condition;
   windElement.innerHTML = `${wind} km/h`;
   humidityElement.innerHTML = `${humidity}%`;
   timeElement.innerHTML = dateFormat(date);
+  imgElement.innerHTML = `  <img src="${icon}" alt="">`;
 }
 
 function dateFormat(date) {
