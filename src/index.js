@@ -41,6 +41,8 @@ function update(response) {
   humidityElement.innerHTML = `${humidity}%`;
   timeElement.innerHTML = dateFormat(date);
   imgElement.innerHTML = `  <img src="${icon}" alt="">`;
+
+  getForecastData(response.data.city);
 }
 
 function dateFormat(date) {
@@ -68,9 +70,14 @@ function dateFormat(date) {
 let searchElement = document.querySelector(".search-form");
 searchElement.addEventListener("submit", citySearch);
 
-citySelect("Boston");
+function getForecastData(city) {
+  apiKey = "t0cee57ed010o387a24333e4fba6d54e";
+  apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(forecastSetup);
+}
 
-function forecastSetup() {
+function forecastSetup(response) {
+  console.log(response.data);
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
   let forecastString = "";
 
@@ -98,4 +105,4 @@ function forecastSetup() {
   forecastElement.innerHTML = forecastString;
 }
 
-forecastSetup();
+citySelect("Boston");
