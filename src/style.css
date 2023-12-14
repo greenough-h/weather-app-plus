@@ -21,6 +21,7 @@ body {
   border: 1px solid #551a8b;
   background: #f9f7fe;
   padding: 10px;
+  margin: 5px 0 10px 5px;
   width: 80%;
   border-radius: 5px;
   font-size: 15px;
@@ -60,7 +61,7 @@ h1 {
 }
 
 strong {
-  color: #f65282;
+  color: #86cef7;
 }
 
 .temperature-block {
@@ -85,7 +86,7 @@ strong {
 
 .col {
   text-align: center;
-  margin: 5px 0 25px 0;
+  margin: 25px 0 25px 0;
 }
 
 .forecast-icon {
@@ -102,7 +103,7 @@ footer {
   text-align: center;
   font-size: 14px;
   border-top: 1px solid #deca64;
-  padding: 20px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 a {
