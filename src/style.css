@@ -1,12 +1,14 @@
 body {
   background: linear-gradient(#551a8b, #9198e5);
+  background-color: #9198e5;
+  background-repeat: no-repeat;
   font-family: Poppins;
 }
 
 .app-container {
   background-color: white;
   max-width: 600px;
-  margin: 35px auto;
+  margin: 55px auto;
   padding: 25px 25px 15px 25px;
   border-radius: 15px;
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
