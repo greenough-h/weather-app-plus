@@ -130,6 +130,26 @@ a {
     width: 35%;
   }
 
+  .all-data {
+    display: block;
+    margin: 30 auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 75px;
+    margin-bottom: 5px;
+  }
+
+  .data-details {
+    text-align: center;
+  }
+
+  .temperature-block {
+    justify-content: center;
+    margin: 20px 0;
+  }
+
   footer {
     font-size: 12px;
     margin-top: 25px;
