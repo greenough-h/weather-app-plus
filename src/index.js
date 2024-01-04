@@ -90,7 +90,7 @@ function forecastSetup(response) {
     if (index < 5) {
       forecastString =
         forecastString +
-        `<div class="col">
+        `<div class="col-sm">
                     <div class="forecast-day">
                         ${forecastDaySetup(day.time)}
                     </div>

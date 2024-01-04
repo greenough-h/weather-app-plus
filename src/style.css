@@ -86,7 +86,7 @@ strong {
   margin-top: 25px;
 }
 
-.col {
+.col-sm {
   text-align: center;
   margin: 25px 0 25px 0;
 }
@@ -110,4 +110,41 @@ footer {
 
 a {
   color: #551a8b;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+  }
+
+  .search-input,
+  .search-submit {
+    font-size: 12px;
+  }
+
+  .search-input {
+    width: 60%;
+  }
+
+  .search-submit {
+    width: 35%;
+  }
+
+  footer {
+    font-size: 12px;
+    margin-top: 25px;
+  }
+
+  .col-sm {
+    background-color: rgba(145, 152, 229, 0.16);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px auto;
+    max-width: 76%;
+  }
+
+  .forecast-day {
+    color: black;
+    font-size: 18px;
+  }
 }
