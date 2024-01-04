@@ -112,7 +112,7 @@ a {
   color: #551a8b;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .app-container {
     width: 90%;
   }
